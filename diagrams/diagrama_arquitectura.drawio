@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram name="Arquitectura HCE" id="hce-architecture-trust-boundaries">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e4" edge="1" parent="1" source="api" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;fontSize=12;" target="mysql" value="Consultas / escritura HCE">
+          <mxGeometry relative="1" x="-0.2409" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="275" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="lab" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;fontSize=12;" target="endpoint" value="Intercambio con tercero">
+          <mxGeometry relative="1" x="-0.7" y="45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="api" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;fontSize=12;" target="lab" value="Órdenes / resultados">
+          <mxGeometry relative="1" x="-0.2079" y="21" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="925" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;fontSize=12;" target="pacs" value="Imágenes DICOM">
+          <mxGeometry relative="1" x="-0.4483" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#111111;" value="Diagrama de Arquitectura y Fronteras de Confianza - Sistema HCE" vertex="1">
+          <mxGeometry height="40" width="940" x="130" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#555555;" value="Escenario 3 - Sistema de Salud / Historia Clínica Electrónica" vertex="1">
+          <mxGeometry height="30" width="540" x="330" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pacientes" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#222222;fontSize=16;fontColor=#111111;" value="&lt;b&gt;PACIENTES&lt;/b&gt;&lt;br&gt;(Internet)" vertex="1">
+          <mxGeometry height="80" width="230" x="250" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="medicos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#222222;fontSize=16;fontColor=#111111;" value="&lt;b&gt;PERSONAL MÉDICO&lt;/b&gt;&lt;br&gt;(Red Hospital)" vertex="1">
+          <mxGeometry height="80" width="230" x="720" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="react" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontColor=#111111;" value="&lt;b&gt;Aplicación Web (React App)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="740" x="230" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="frontera2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#2d7a2d;dashed=1;dashPattern=8 4;fontSize=15;fontColor=#111111;" value="&lt;b&gt;FRONTERA DE CONFIANZA 2: Red Interna Segura&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1040" x="80" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="frontera3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff4e6;strokeColor=#ff8000;dashed=1;dashPattern=8 4;fontSize=15;fontColor=#111111;" value="&lt;b&gt;FRONTERA 3: Terceros&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="270" x="789" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="pacs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;fontColor=#111111;" value="&lt;b&gt;Servidor PACS&lt;/b&gt;&lt;br&gt;(Imágenes DICOM)" vertex="1">
+          <mxGeometry height="80" width="250" x="475" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;fontColor=#111111;" value="&lt;b&gt;Integración con&lt;/b&gt;&lt;br&gt;Laboratorio Externo" vertex="1">
+          <mxGeometry height="80" width="250" x="800" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="endpoint" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=15;fontColor=#111111;" value="&lt;b&gt;API / Endpoint Externo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="230" x="810" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="medicos" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;" target="react" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="react" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;fontSize=12;" target="api" value="HTTPS">
+          <mxGeometry relative="1" x="-0.75" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=17;fontColor=#111111;" value="&lt;b&gt;API Gateway / API REST + FHIR&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="820" x="190" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;fontColor=#111111;" value="&lt;b&gt;Base de Datos&lt;/b&gt;&lt;br&gt;MySQL (HCE)" vertex="1">
+          <mxGeometry height="80" width="250" x="150" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pacientes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#111111;" target="react" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="frontera1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eef5ff;strokeColor=#1f5fbf;dashed=1;dashPattern=8 4;fontSize=15;fontColor=#111111;" value="&lt;b&gt;FRONTERA DE CONFIANZA 1: Perímetro Externo (HTTPS)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1040" x="80" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
