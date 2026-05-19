@@ -1,0 +1,3 @@
+Fecha: 19-05-2026
+Herramienta: Gemini 3.1 pro
+Prompt: Tomando como base lo descrito en el archivo @00-memory-bank.md, puedes ayudarme a identificar los activos de alta criticidad (datos de salud = PHI)
