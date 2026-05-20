@@ -1,3 +1,19 @@
 Fecha: 19-05-2026
 Herramienta: Gemini 3.1 pro
 Prompt: Tomando como base lo descrito en el archivo @00-memory-bank.md, puedes ayudarme a identificar los activos de alta criticidad (datos de salud = PHI)
+
+
+Fecha: 20-05-2026
+Herramienta: Cloud Sonnet 4.6
+Prompt:  
+Usá exclusivamente como fuente principal el contenido del `00-memory-bank` del proyecto.
+Necesito que generes una lista completa de activos críticos del sistema HCE, clasificados por tipo y criticidad.
+Instrucciones:
+1. Leé y analizá el contenido del `00-memory-bank`.
+2. Identificá todos los activos relevantes del sistema HCE.
+3. Priorizá los activos críticos desde el punto de vista de:
+4. Clasificá cada activo por tipo, por ejemplo:
+5. Asigná una criticidad a cada activo:  Alta, Media y Baja
+6. Justificá brevemente por qué se asigna esa criticidad.
+7. No inventes información fuera del `00-memory-bank`. Si algo es una inferencia necesaria, indicá que es una inferencia basada en el contexto documentado.
+Formato de salida esperado: es el archivo adjunto. `Guia - Implantacion SGSI - Inventario activos y Evaluacion riesgos` en la pestaña `Inventario de Activos`, arma un documento donde los identifiques a los activos de alta criticidad (datos de salud = PHI)
