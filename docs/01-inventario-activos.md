@@ -14,9 +14,9 @@ En conjunto, estos marcos permiten fundamentar la criticidad de los activos del 
 
 # **Activos Identificados**
 
-## **Activos de Información (Los datos PHI puros)**
+## **Activos de Información**
 
-Estos son los datos generados y procesados por el hospital que constituyen la Información de Salud Protegida, considerada de alta criticidad por su impacto en la privacidad de los pacientes y cumplimiento loa marco normativo (como HIPAA, AGESIC)
+Estos son los datos generados y procesados por el hospital que constituyen la Información de Salud Protegida, considerada de alta criticidad por su impacto en la privacidad de los pacientes y cumplimiento del marco normativo (como HIPAA, AGESIC)
 
 | Activo | Tipo | Descripción | Criticidad  | Justificación  |
 | ----- | ----- | ----- | ----- | ----- |
@@ -29,7 +29,7 @@ Estos son los datos generados y procesados por el hospital que constituyen la In
 | Credenciales de Acceso del Sistema HCE | Información | Usuarios, contraseñas y tokens de autenticación del personal que accede al sistema HCE | Alta | Su exposición podría habilitar accesos no autorizados, suplantación de identidad, consulta indebida de información clínica o modificación de datos sensibles. |
 | Logs de Auditoría del Sistema | Información | Registros de acceso, modificaciones y eventos del sistema HCE; necesarios para trazabilidad y cumplimiento normativo | Alta | Son esenciales para trazabilidad, auditoría, investigación de incidentes y cumplimiento normativo. Si se alteran o eliminan, se pierde evidencia sobre acciones realizadas en la HCE. |
 
-## **Activos de Soporte / Tecnológicos**  **(Contenedores y Canales de la PHI)**  
+## **Activos de Soporte / Tecnológicos** 
 
 Estos son los componentes de la arquitectura descrita en el alcance que almacenan, procesan o transmiten los datos de salud y que heredan esa alta criticidad
 
