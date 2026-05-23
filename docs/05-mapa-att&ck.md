@@ -37,63 +37,63 @@ También podría interceptar los resultados de laboratorio en tránsito, pivotan
 | **ID** | T1595 |
 | **Técnica**  | Active Scanning  |
 | **Activo Afectado**  | Aplicación Web (React) / API REST  |
-| **Mitigación**  | Implementar un WAF (Web Application Firewall) para bloquear patrones de escaneo de vulnerabilidades. Configurar Rate Limiting (limitación de tasa) estricto por IP en la Frontera de Confianza 1 para frenar el escaneo automatizado.  |
+| **Mitigación**  | <ul><li>Implementar un WAF (Web Application Firewall) para bloquear patrones de escaneo de vulnerabilidades.</li><li>Configurar Rate Limiting (limitación de tasa) estricto por IP en la Frontera de Confianza 1 para frenar el escaneo automatizado.</li></ul>  |
 
 | Initial Access  |  |
 | :---- | :---- |
 | **ID** | T1190  |
 | **Técnica**  | Exploit Public-Facing Application  |
 | **Activo Afectado**  | Aplicación Web (React) / Credenciales  |
-| **Mitigación**  | Validación estricta de entradas y parametrización en la API. Mantener dependencias actualizadas. Ejecutar análisis DAST/SAST en el ciclo de desarrollo para detectar vulnerabilidades en el código antes de producción.  |
+| **Mitigación**  | <ul><li>Validación estricta de entradas y parametrización en la API.</li><li>Mantener dependencias actualizadas.</li><li>Ejecutar análisis DAST/SAST en el ciclo de desarrollo para detectar vulnerabilidades en el código antes de producción.</li></ul>  |
 
 | Execution |  |
 | :---- | :---- |
 | **ID** | T1059 |
 | **Técnica**  | Command and Scripting Interpreter |
 | **Activo Afectado**  | Aplicación Web (React) |
-| **Mitigación**  | Aplicar el Principio de Menor Privilegio a la cuenta de servicio o contenedor (Docker) que ejecuta la aplicación web/backend.  Implementar políticas de seguridad de contenido (CSP) estrictas en React. |
+| **Mitigación**  | <ul><li>Aplicar el Principio de Menor Privilegio a la cuenta de servicio o contenedor (Docker) que ejecuta la aplicación web/backend.</li><li> Implementar políticas de seguridad de contenido (CSP) estrictas en React.</li></ul> |
 
 | Privilege Escalation |  |
 | :---- | :---- |
 | **ID** | T1134 |
 | **Técnica**  | Access Token Manipulation |
 | **Activo Afectado**  | API REST \+ FHIR |
-| **Mitigación**  | Validación criptográfica de los tokens JWT (firma, expiración, emisor).  Usar tokens de corta duración, combinados con Refresh Tokens, y mantener una lista de revocación en el backend. |
+| **Mitigación**  | <ul><li>Validación criptográfica de los tokens JWT (firma, expiración, emisor).</li><li>Usar tokens de corta duración, combinados con Refresh Tokens, y mantener una lista de revocación en el backend.</li></ul> |
 
 | Defense Evasion |  |
 | :---- | :---- |
 | **ID** | T1070 |
 | **Técnica**  | Indicator Removal |
 | **Activo Afectado**  | Logs de auditoría. |
-| **Mitigación**  | Centralización de logs enviando los eventos a un SIEM o servidor remoto en tiempo real (modo append-only).  Restringir los permisos para que la cuenta del servidor de aplicaciones no pueda modificar o borrar los archivos de registro locales. |
+| **Mitigación**  | <ul><li>Centralización de logs enviando los eventos a un SIEM o servidor remoto en tiempo real (modo append-only).</li><li>Restringir los permisos para que la cuenta del servidor de aplicaciones no pueda modificar o borrar los archivos de registro locales.</li></ul> |
 
 | Lateral Movement |  |
 | :---- | :---- |
 | **ID** | T1210 |
 | **Técnica**  | Exploitation of Remote Services |
 | **Activo Afectado**  | Integración con laboratorios |
-| **Mitigación**  | Aplicar Autenticación Mutua (mTLS) y Listas Blancas de IP estrictas en el firewall de la Frontera de Confianza 4\. Deshabilitar protocolos de administración remota no esenciales (como RDP o SSH) en esas interfaces. |
+| **Mitigación**  | <ul><li>Aplicar Autenticación Mutua (mTLS) y Listas Blancas de IP estrictas en el firewall de la Frontera de Confianza 4\.</li><li> Deshabilitar protocolos de administración remota no esenciales (como RDP o SSH) en esas interfaces.</li></ul> |
 
 | Collection |  |
 | :---- | :---- |
 | **ID** | T1119 |
 | **Técnica**  | Automated Collection |
 | **Activo Afectado**  | Base de Datos MySQL |
-| **Mitigación**  | Monitoreo de Actividad de Base de Datos para alertar sobre consultas anómalas.  Aplicar privilegios mínimos a la conexión JDBC: la API sólo debe poder consultar/modificar las tablas necesarias. |
+| **Mitigación**  | <ul><li>Monitoreo de Actividad de Base de Datos para alertar sobre consultas anómalas.</li><li>Aplicar privilegios mínimos a la conexión JDBC: la API sólo debe poder consultar/modificar las tablas necesarias.</li></ul> |
 
 | Exfiltration |  |
 | :---- | :---- |
 | **ID** | T1567 |
 | **Técnica**  | Exfiltration Over Web Service |
 | **Activo Afectado**  | Datos de Registro |
-| **Mitigación**  | Filtrado de tráfico de salida (Egress filtering) en los firewalls.  El servidor de base de datos y el backend solo deben poder comunicarse con destinos explícitamente autorizados, bloqueando conexiones hacia servicios de almacenamiento en la nube externos no corporativos. |
+| **Mitigación**  | <ul><li>Filtrado de tráfico de salida (Egress filtering) en los firewalls.</li><li>El servidor de base de datos y el backend solo deben poder comunicarse con destinos explícitamente autorizados, bloqueando conexiones hacia servicios de almacenamiento en la nube externos no corporativos.</li></ul> |
 
 | Impact |  |  |
 | :---- | :---- | :---- |
 | **ID** | T1485 | T1565 |
 | **Técnica**  | Data Destruction | Data Manipulation |
 | **Activo Afectado**  | Prescripciones / Resultados de Laboratorio |  |
-| **Mitigación**  | Políticas de Backups inmutables y cifrados (como se ve en la "Red Backups" de tu arquitectura) alojados fuera de línea o en zonas aisladas. Probar la restauración periódicamente. | Implementar firmas digitales o hashing en los registros de la base de datos para detectar alteraciones.  Controles de acceso basados en atributos (ABAC) para evitar modificaciones no autorizadas de las historias clínicas. |
+| **Mitigación**  | <ul><li>Políticas de Backups inmutables y cifrados (como se ve en la "Red Backups" de tu arquitectura) alojados fuera de línea o en zonas aisladas.</li><li> Probar la restauración periódicamente.</li></ul> | Implementar firmas digitales o hashing en los registros de la base de datos para detectar alteraciones. </li><li> Controles de acceso basados en atributos (ABAC) para evitar modificaciones no autorizadas de las historias clínicas.</li></ul> |
 
 En base al análisis realizado, se desprende que el componente más crítico en la arquitectura del sistema, y al que más controles se deben realizar, es el Backend del hospital.
 

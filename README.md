@@ -1,9 +1,13 @@
 # ISI-Benedictti-Fariello-riesgos
 Repositorio para entrega de Tarea 2 de la materia Taller de Introducción a la Seguridad Informática, de la carrera Tecnólogo en Informática, año 2026.
 
+# Grupo:
+Bibiana Fariello
+Paola Benedictti
+
+
 # Tarea a realizar:
 ### Escenario 3: Sistema de Salud - Historias Clínicas Electrónicas
-**Asignado:** Bibiana Fariello, Paola Benedictti
 
 **Contexto:**
 Un hospital implementa un sistema de HCE con:
@@ -33,3 +37,4 @@ Un hospital implementa un sistema de HCE con:
 - Análisis de compliance (HIPAA, GDPR)
 - Matriz de controles de seguridad
 - Privacy impact assessment
+
