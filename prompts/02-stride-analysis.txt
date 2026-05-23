@@ -1,0 +1,14 @@
+Fecha: 21-05-2026
+Herramienta: Cloud Sonnet 4.6
+Prompt:  
+Necesito que generes el análisis STRIDE del flujo principal del sistema HCE,
+ utilizando como base el archivo '00-memory-bank.md' y el diagrama de flujo 'flujo_datosV2.jpg'
+
+El análisis debe quedar redactado como solamente como una tabla,agregar una tabla de resumen. 
+El alcance del análisis comprende el flujo de comunicación entre el Usuario Paciente y el Backend Hospital, incluyendo los componentes anexos que intervienen en el procesamiento, almacenamiento e intercambio de información clínica: Base de Datos MySQL, Servicios Externos / Laboratorio externo, Backend HCE y PACS DICOM.
+El objetivo es identificar amenazas que puedan afectar CIa de los datos médicos protegidos.
+La explicación debe ser clara, profesional y orientada a seguridad.
+
+la tabla debe incluir las siguientes columnas:
+
+STRIDE | Categoría | Riesgo | Amenaza | Descripción del ataque | Mitigaciones técnicas | Normativa | Estado | Responsable

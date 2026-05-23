@@ -17,3 +17,4 @@ Instrucciones:
 6. Justificá brevemente por qué se asigna esa criticidad.
 7. No inventes información fuera del `00-memory-bank`. Si algo es una inferencia necesaria, indicá que es una inferencia basada en el contexto documentado.
 Formato de salida esperado: es el archivo adjunto. `Guia - Implantacion SGSI - Inventario activos y Evaluacion riesgos` en la pestaña `Inventario de Activos`, arma un documento donde los identifiques a los activos de alta criticidad (datos de salud = PHI)
+
