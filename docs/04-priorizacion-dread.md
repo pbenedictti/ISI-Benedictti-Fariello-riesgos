@@ -1,7 +1,5 @@
 # Análisis de riesgos  Metodología DREAD
 
-# 
-
 El presente análisis aplica la metodología DREAD como herramienta de priorización de riesgos sobre las amenazas previamente identificadas en el sistema de HCE. El objetivo no es volver a describir todas las amenazas desde cero, sino asignarles un valor cuantitativo que permita comparar su criticidad y definir cuáles requieren atención prioritaria. 
 
 En este documento, DREAD se utiliza para evaluar vulnerabilidades asociadas a los principales componentes del sistema, como el Portal de Usuario, el Frontend, el Backend Hospitalario. Dado que el sistema procesa información médica sensible, los puntajes asignados consideran no solo el impacto técnico, sino también las posibles consecuencias sobre la confidencialidad de los datos clínicos, la integridad de los resultados médicos, la disponibilidad del sistema.

@@ -9,6 +9,3 @@ El alcance del análisis comprende el flujo de comunicación entre el Usuario Pa
 El objetivo es identificar amenazas que puedan afectar CIa de los datos médicos protegidos.
 La explicación debe ser clara, profesional y orientada a seguridad.
 
-la tabla debe incluir las siguientes columnas:
-
-STRIDE | Categoría | Riesgo | Amenaza | Descripción del ataque | Mitigaciones técnicas | Normativa | Estado | Responsable
