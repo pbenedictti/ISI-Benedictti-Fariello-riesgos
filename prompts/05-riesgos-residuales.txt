@@ -1,0 +1,5 @@
+Fecha: 24-05-2026
+Herramienta 1: Gemini 3.1 pro
+Herramienta 2: Claude Sonnet 4.6
+Prompt:
+Como experto en ciberseguridad, que pasos seguirías para realizar un análisis de riesgos residuales?

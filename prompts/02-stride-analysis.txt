@@ -1,5 +1,5 @@
 Fecha: 21-05-2026
-Herramienta: Cloud Sonnet 4.6
+Herramienta: Claude Sonnet 4.6
 Prompt:  
 Necesito que generes el análisis STRIDE del flujo principal del sistema HCE,
  utilizando como base el archivo '00-memory-bank.md' y el diagrama de flujo 'flujo_datosV2.jpg'

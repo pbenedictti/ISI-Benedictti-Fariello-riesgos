@@ -4,7 +4,7 @@ Prompt: Tomando como base lo descrito en el archivo @00-memory-bank.md, puedes a
 
 
 Fecha: 20-05-2026
-Herramienta: Cloud Sonnet 4.6
+Herramienta: Claude Sonnet 4.6
 Prompt:  
 Usá exclusivamente como fuente principal el contenido del `00-memory-bank` del proyecto.
 Necesito que generes una lista completa de activos críticos del sistema HCE, clasificados por tipo y criticidad.
