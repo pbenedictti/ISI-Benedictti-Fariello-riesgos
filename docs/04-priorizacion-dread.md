@@ -20,9 +20,9 @@ La matriz de riesgos presentada en este documento permite visualizar de forma co
 
 | Id | Componente | Amenaza | D | R | E | A | D | DREAD Score | Severidad |
 | :---: | :---: | ----- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| V1 | Portal de Usuario | Robo de credenciales y secuestro de sesión | 6 | 8 | 7 | 3 | 5 | 5,8 | Medio |
-| V2 | Portal de Usuario | Exposición de HCE por sesión activa | 6 | 8 | 10 | 3 | 1 | 5,6 | Medio |
-| V3 | Portal de Usuario | Manipulación de solicitudes por IDOR | 9 | 9 | 7 | 5 | 7 | 7,4 | Alto |
+| V1 | Portal Paciente | Robo de credenciales y sesión | 6 | 8 | 7 | 3 | 5 | 5,8 | Medio |
+| V2 | Portal Paciente | Exposición de HCE por sesión activa | 6 | 8 | 10 | 3 | 1 | 5,6 | Medio |
+| V3 | Portal Paciente | Manipulación de solicitudes por IDOR | 9 | 9 | 7 | 5 | 7 | 7,4 | Alto |
 | V4 | FrontEnd | Exposición de datos sensibles en frontend | 3 | 9 | 8 | 9 | 9 | 7,6 | Alto |
 | V5 | FrontEnd | Secuestro de sesión mediante XSS | 9 | 7 | 5 | 5 | 6 | 6,4 | Medio |
 | V6 | FrontEnd | Compromiso de dependencias y manipulación del DOM | 8 | 6 | 7 | 9 | 4 | 6,8 | Medio |

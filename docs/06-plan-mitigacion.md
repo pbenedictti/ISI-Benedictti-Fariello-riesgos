@@ -36,7 +36,7 @@ A partir de las amenazas identificadas y priorizadas, se definen contramedidas o
 | 9 | V6 | Compromiso de dependencias y manipulación del DOM | Medio | Usar versionado fijo, npm audit/Snyk, revisión de paquetes, SRI y bloqueo de dominios no autorizados en CSP. | Mediano plazo |
 | 10 | V5 | Secuestro de sesión mediante XSS | Medio | Usar cookies HttpOnly, Secure y SameSite, CSP estricta, sanitización con DOMPurify y evitar JWT en localStorage. | Mediano plazo |
 | 11 | V7 | XSS almacenado con privilegios de profesional | Medio | Sanitización de salida, escaping contextual, CSP con nonce y separación de sesiones por perfil. | Mediano plazo |
-| 12 | V1 | Robo de credenciales y secuestro de sesión | Medio | Aplicar MFA, detección de login anómalo, notificación de nuevos accesos y gestión de sesiones activas. | Mediano plazo |
+| 12 | V1 | Robo de credenciales y sesión | Medio | Aplicar MFA, detección de login anómalo, notificación de nuevos accesos y gestión de sesiones activas. | Mediano plazo |
 | 13 | V13 | Operaciones administrativas sin trazabilidad | Medio | Implementar logs inmutables, alertas SIEM, segregación de funciones y justificación obligatoria. | Mediano plazo |
 | 14 | V2 | Exposición de HCE por sesión activa | Medio | Timeout automático, cierre de sesión server-side, aviso previo y panel de sesiones activas. | Mediano plazo |
 
