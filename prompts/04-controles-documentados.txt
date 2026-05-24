@@ -1,0 +1,63 @@
+Fecha: 24/05/2026
+Herramienta: Gemini 3.1 Pro
+Prompt:
+En base a los archivos adjuntos, y utilizando los links con información necesarios para el contexto que se encuentran en el 00-memory-bank, me puedes ayudar a armar una matriz de control, con los siguientes campos: id, control, descripción y referencia (siendo referencia, la norma que cubre el control). Los controles a mapear son los de la siguiente lista:
+MFA obligatorio 
+Detección de login anómalo 
+Notificación por email de cada nuevo login
+Cookies HttpOnly+Secure+SameSite
+JWT no en localStorage
+Validación server-side de todos los parámetros
+Autorización basada en identidad del token JWT
+Session timeout automático 15 min de inactividad
+Invalidación de sesión en logout en servidor
+Panel de sesiones activas
+Cookies de sesión HttpOnly + Secure + SameSite
+CSP estricta con allow list mínima
+No almacenar JWT en localStorage
+Sanitización con DOMPurify en contenido dinámico
+Revisión de sinks peligrosos del DOM
+SRI en scripts externos
+Auditoría continua de dependencias con npm audit
+Versionado fijo y política formal de actualización
+Revisión de paquetes nuevos antes de incorporarlos. Notas release
+Bloqueo de dominios no autorizados en CSP
+FHIR con scopes y campos mínimos necesarios
+No incluir datos sensibles en builds de producción
+Deshabilitar source maps públicos en producción
+Validar contratos de API para evitar over-fetching
+Revisar respuestas con pruebas de privacidad
+Sanitización de output con DOMPurify
+CSP con nonce por request
+Separación estricta de sesiones admin, profesional y paciente
+Validación y escaping contextual en todos los campos renderizados
+mTLS con certificado de cliente del laboratorio
+Validación del CN/SAN del certificado en backend
+Firma digital JWS RS256 del payload
+Whitelist de IPs del laboratorio
+API Key rotatoria con espiración corta
+ORM o queries parametrizadas, sin concatenación de SQL
+Validación de esquema
+WAF con OWASP CRS en modo bloqueo
+Usuario de BD con mínimo privilegio
+Procedimientos almacenados para operaciones críticas
+TLS 1.3 exclusivo con validación estricta de certificados
+ Firma digital JWS RS256 del payload por el laboratorio
+Verificación de firma, timestamp y nonce en middleware
+Log inmutable de operaciones administrativas con identidad del operador
+Alertas SIEM por consultas o exportaciones masivas
+Segregación de funciones entre roles administrativos y operativos
+Justificación obligatoria para acciones sensibles
+Política de no-log Enmascaramiento automático en el logger
+Cifrado de logs en disco y en tránsito
+WORM storage para logs críticos
+Revisión periódica de patrones de logging
+Rate limiting por IP, token y cliente en API Gateway
+Circuit breaker hacia servicios dependientes.Tolerancia a fallas
+Límites de concurrencia por endpoint
+Health checks y auto-scaling con umbrales controlados
+Eliminar parámetros URL controlados por usuario cuando sea posible
+Allowlist estricta de dominios y bloqueo de IPs privadas
+Firewall de egreso: backend solo alcanza destinos autorizados
+IMDSv2 obligatorio en instancias cloud
+Validación DNS y bloqueo de redirecciones
