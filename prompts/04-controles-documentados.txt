@@ -1,7 +1,8 @@
 Fecha: 24/05/2026
 Herramienta: Gemini 3.1 Pro
 Prompt:
-En base a los archivos adjuntos, y utilizando los links con información necesarios para el contexto que se encuentran en el 00-memory-bank, me puedes ayudar a armar una matriz de control, con los siguientes campos: id, control, descripción y referencia (siendo referencia, la norma que cubre el control). Los controles a mapear son los de la siguiente lista:
+En base a los archivos /docs/nist/NIST.SP.800-66r2.pdf y /docs/nist/sp800-66r2-cybersecurity-resources.pdf, y utilizando los links con información necesarios para el contexto que se encuentran en el 00-memory-bank, me puedes ayudar a armar una matriz de control, con los siguientes campos: id, control, descripción y referencia (siendo referencia, la norma que cubre el control). 
+Los controles a mapear son los de la siguiente lista:
 MFA obligatorio 
 Detección de login anómalo 
 Notificación por email de cada nuevo login
