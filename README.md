@@ -38,4 +38,16 @@ Un hospital implementa un sistema de HCE con:
 - Matriz de controles de seguridad
 - Privacy impact assessment
 
+## Herramientas de IA utilizadas
+- ChatGPT (GPT-5.5) 
+    - Asistencia en generación de contenido para presentación
+- Claude Sonnet 4.6 
+    - Asistencia en redacción de inventario de activos, análisis STRIDE.
+    - Asistencia en forma de trabajo en análisis de riesgos residuales.
+- Gemini 3.1 pro 
+    - Asistencia en generación de Mapa ATT&CK
+    - Asitencia en clasificación de controles.
+    - Asistencia en forma de trabajo en análisis de riesgos residuales.
+
+
 
