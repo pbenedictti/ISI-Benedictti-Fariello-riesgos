@@ -1,14 +1,14 @@
-# Plan de mitigación
+# **Plan de mitigación**
 
 El presente plan de mitigación se elabora a partir de las amenazas identificadas y evaluadas mediante DREAD, con el objetivo de priorizar acciones de seguridad según el nivel de riesgo obtenido. La priorización permite enfocar los esfuerzos en aquellas amenazas con mayor impacto potencial sobre la confidencialidad, integridad y disponibilidad de la Historia Clínica Electrónica.
 
 El criterio utilizado considera el puntaje DREAD y la severidad asignada a cada amenaza. Las amenazas críticas requieren tratamiento inmediato, las amenazas altas deben abordarse en el corto plazo y las amenazas medias se incorporan a una planificación controlada de mejora y seguimiento.
 
-# **Alcance de la mitigación**
+## **Alcance de la mitigación**
 
 El alcance de este plan de mitigación se limita al flujo analizado en los documentos 03 \- Análisis STRIDE y 04 \- Priorización DREAD. Las acciones definidas se enfocan exclusivamente en las amenazas identificadas y priorizadas dentro de dicho flujo, considerando los componentes, actores, integraciones y activos evaluados previamente.
 
-# **Criterio de priorización**
+## **Criterio de priorización**
 
 La priorización se define en función del puntaje DREAD obtenido para cada amenaza. No todas las amenazas dentro de una misma severidad tienen el mismo orden de atención; por este motivo, el plan se organiza de mayor a menor criticidad.
 
@@ -19,7 +19,7 @@ La priorización se define en función del puntaje DREAD obtenido para cada amen
 | 5,0 a 6,9 | Medio | Mitigación planificada |
 | 0 a 4,9 | Bajo | Monitoreo y mejora continua |
 
-# **Matriz de prioridad de amenazas** 
+## **Matriz de prioridad de amenazas** 
 
 A partir de las amenazas identificadas y priorizadas, se definen contramedidas orientadas a reducir la probabilidad de explotación y el impacto sobre el sistema. Las medidas propuestas consideran controles técnicos, operativos y de seguridad aplicables al flujo analizado.
 
@@ -40,9 +40,9 @@ A partir de las amenazas identificadas y priorizadas, se definen contramedidas o
 | 13 | V13 | Operaciones administrativas sin trazabilidad | Medio | Implementar logs inmutables, alertas SIEM, segregación de funciones y justificación obligatoria. | Mediano plazo |
 | 14 | V2 | Exposición de HCE por sesión activa | Medio | Timeout automático, cierre de sesión server-side, aviso previo y panel de sesiones activas. | Mediano plazo |
 
-# **Controles por categoría**
+## **Controles por categoría**
 
-## **Controles Preventivos**
+### **Controles Preventivos**
 
 Diseñados para bloquear vulnerabilidades, limitar el acceso y evitar que un incidente de seguridad llegue a materializarse.
 
@@ -82,7 +82,7 @@ Diseñados para bloquear vulnerabilidades, limitar el acceso y evitar que un inc
 * IMDSv2 obligatorio en instancias cloud  
 * Validación DNS y bloqueo de redirecciones
 
-  ## **Controles Detectivos**
+### **Controles Detectivos**
 
 Estos no detienen el ataque, pero proporcionan visibilidad, alertas y pruebas de que un incidente está ocurriendo o ha ocurrido.
 
@@ -95,9 +95,9 @@ Estos no detienen el ataque, pero proporcionan visibilidad, alertas y pruebas de
 * Auditoría continua de dependencias con npm audit  
 * Revisar respuestas con pruebas de privacidad
 
-  ## **Controles Correctivos**
+### **Controles Correctivos**
 
-Actúan *después* de que se ha detectado una falla, un ataque o una condición adversa, con el objetivo de restaurar el servicio o mitigar el impacto en tiempo real.
+Actúan después de que se ha detectado una falla, un ataque o una condición adversa, con el objetivo de restaurar el servicio o mitigar el impacto en tiempo real.
 
 * Circuit breaker hacia servicios dependientes (Tolerancia a fallas)  
 * Health checks y auto-scaling con umbrales controlados
