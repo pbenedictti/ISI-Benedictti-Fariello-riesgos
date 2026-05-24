@@ -41,7 +41,7 @@ Interfaz web del Portal del Paciente que se ejecuta en el navegador del usuario 
 
 ## Componente Backend Hospital
 
-**Tipo:** Servicio / API hospitalaria.
+**Tipo:** Servicio.
 
 Servicio central del sistema que recibe las solicitudes provenientes del Portal del Paciente, valida la identidad del usuario, aplica las reglas de negocio y coordina el acceso a la información clínica. Este componente actúa como punto de control principal entre el Frontend React, la Base de Datos MySQL, los Servicios Externos / Laboratorio externo.
 
