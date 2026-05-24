@@ -38,3 +38,4 @@ Un hospital implementa un sistema de HCE con:
 - Matriz de controles de seguridad
 - Privacy impact assessment
 
+
