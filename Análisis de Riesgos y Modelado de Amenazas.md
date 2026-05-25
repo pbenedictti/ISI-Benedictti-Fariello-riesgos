@@ -68,7 +68,7 @@ El sistema consiste en una plataforma de Historia Clínica Electrónica (HCE) qu
 
 ### **3.1. Diagrama de Arquitectura**
 
-![][image1]
+![image1](</diagrams/Diagrama Arquitectura_v2.jpg>)
 
 ### **3.2. Flujo de datos**
 

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0">
   <diagram id="5-sShnlwzSZc3csqMebz" name="Diagrama de Arquitectura">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -276,14 +276,12 @@
         <mxCell id="tF6Ws3DdcpzEOkggNVj6-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=17;" value="&amp;lt;&amp;lt;REST + FHIR&amp;gt;&amp;gt;" vertex="1">
           <mxGeometry height="30" width="170" x="-100" y="525" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="95w5zUYalQZSPwFVldvB" name="Página-2">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="G4YTg6xZeoHIiMCj8P73-2" parent="1" style="swimlane;startSize=0;dashed=1;" value="" vertex="1">
+          <mxGeometry height="445" width="370" x="40" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="G4YTg6xZeoHIiMCj8P73-4" parent="G4YTg6xZeoHIiMCj8P73-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=17;" value="&lt;font&gt;Red interna Bases de datos&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="250" y="13" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
